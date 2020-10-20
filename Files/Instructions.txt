@@ -1,0 +1,13 @@
+Instructions:
+1. npm init
+2. add appropriate information. [Name: babel-project / Description: Transpile code in a babel project.]
+3. npm install babel-cli -D  to install a package and add it to devDependencies in one step.
+4. npm install babel-preset-env -D 
+5. touch .babelrc to add .babelrc to the projectfolder
+6. preset babelrc config to "env" .babelrc {"presets":["env"]}
+7. add "build" script to package.json 
+   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d lib"
+  }
+8. npm run build
